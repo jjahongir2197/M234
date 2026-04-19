@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numbers</title>
+</head>
+<body>
+
+<h2>Son qo‘shish</h2>
+
+<form method="POST">
+    <input type="number" name="num">
+    <button type="submit">Qo‘shish</button>
+</form>
+
+<h3>List:</h3>
+<ul>
+{% for n in numbers %}
+    <li>{{ n }}</li>
+{% endfor %}
+</ul>
+
+<h3>Yig‘indi: {{ total }}</h3>
+
+</body>
+</html>
